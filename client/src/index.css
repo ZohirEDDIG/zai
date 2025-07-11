@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import 'tailwindcss';
+
+@theme {
+  --color-main: #a8c7fa;
+  --color-secondary: #1b1c1d;
+  --color-third: #333;
+  --color-fourth: #3d3f42;
+}
+
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Source Code Pro', monospace;
+  overflow-x: hidden;
+}
+
+.ai-response table,
+.ai-response th,
+.ai-response td {
+  border: 1px solid white;
+}
+
+.ai-response th,
+.ai-response td {
+  padding: 5px;
+}
+
+.ai-response ul {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.ai-response ol {
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.ai-response a {
+  color: var(--color-main);
+  font-size: 12px;
+  text-decoration: underline;
+  word-break: break-all;
+  display: block;
+  cursor: pointer;
+}
+
+.ai-response code {
+  border-radius: 12px;
+  font-size: 10px !important;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 8px;
+}
